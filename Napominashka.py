@@ -41,7 +41,7 @@ def play_snd():
     global music
     music = True
     pygame.mixer.init()
-    pygame.mixer.music.load("reminder.mp3")
+    pygame.mixer.music.load("OffSp.mp3")
     pygame.mixer.music.play()
 
 
