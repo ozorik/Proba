@@ -33,8 +33,17 @@ def check():
         now = time.time()
         if now >= t:
             play_snd()
+            show_info()
             t = None
     window.after(10000, check)
+
+
+def show_info():
+    global t
+    window.attributes('-topmost', 1)  # Raising root above all other windows
+    window.attributes('-topmost', 0)
+    msg = "Уже пора спать"
+    mb.showinfo("Информация", msg)
 
 
 def play_snd():
